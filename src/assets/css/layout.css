@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    padding: 20px 12px;
+    position: fixed;
+    background-color: #D1E9F6;
+}
+aside , main{
+    display: inline-block;
+    margin-top: 66px;
+    vertical-align: top;
+}
+aside{
+    width: 20%;
+    height: 100vh;
+    padding: 20px 20px;
+    background-color: #F6EACB;
+}
+main{
+    width: 80%;
+    height: 100vh;
+    padding: 20px 20px;
+    background-color: #F1D3CE;
+}
