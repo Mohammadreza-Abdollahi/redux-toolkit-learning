@@ -6,7 +6,7 @@ header{
     width: 100%;
     padding: 20px 12px;
     position: fixed;
-    background-color: #D1E9F6;
+    /* background-color: #D1E9F6; */
 }
 aside , main{
     display: inline-block;
@@ -16,12 +16,10 @@ aside , main{
 aside{
     width: 20%;
     height: 100vh;
-    padding: 20px 20px;
-    background-color: #F6EACB;
 }
 main{
     width: 80%;
     height: 100vh;
     padding: 20px 20px;
-    background-color: #F1D3CE;
+    /* background-color: #F6EACB; */
 }
