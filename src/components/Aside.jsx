@@ -1,8 +1,10 @@
+import { NavLink } from "react-router-dom";
+
 const menuItems = [
-    {name:"کاربران" , link:"#"},
-    {name:"نظرات" , link:"#"},
-    {name:"گالری" , link:"#"},
-    {name:"پست ها" , link:"#"},
+    {name:"کاربران" , link:"/user"},
+    {name:"نظرات" , link:"/comment"},
+    {name:"گالری" , link:"/gallery"},
+    {name:"پست ها" , link:"/post"},
 ]
 const Aside = () => {
     return ( 
@@ -10,9 +12,9 @@ const Aside = () => {
             <aside className='shadow-xl bg-sky-200 dark:bg-amber-800'>
                 <nav className="py-7 px-2 text-2xl">
                     {
-                        menuItems.map((item)=>{
+                        menuItems.map((item , index)=>{
                             return(
-                                <a className="block p-3 my-3 rounded-md hover:bg-orange-300 dark:hover:bg-sky-200 dark:hover:text-slate-800 text-slate-800 dark:text-white" href={`${item.link}`}>{item.name}</a>
+                                <NavLink key={index} to={item.link} className={({isActive})=>isActive ? `bg-orange-400 block p-3 my-3 rounded-md hover:bg-orange-400 dark:hover:bg-sky-200 dark:hover:text-slate-800 text-white dark:text-white` : `block p-3 my-3 rounded-md hover:bg-orange-300 dark:hover:bg-sky-200 dark:hover:text-slate-800 text-slate-800 dark:text-white`}>{item.name}</NavLink>
                             )
                         })
                     }
