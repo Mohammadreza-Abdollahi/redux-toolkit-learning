@@ -1,7 +1,7 @@
 const Post = () => {
     return ( 
         <>
-            <h1 className="text-center text-cyan-500 dark:text-white">Posts</h1>
+            <h1 className="text-center text-cyan-500 dark:text-white text-3xl my-5">Posts</h1>
         </>
      );
 }
